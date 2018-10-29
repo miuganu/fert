@@ -1,0 +1,131 @@
+body {
+    height: 100vh;
+    background-color: #3066BE;
+    background-image: linear-gradient(to left,white -13%,#187AF0,#1481BA,#3066BE , #034748);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 75%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.container-bubble {
+    border-radius: 50%;
+    box-shadow: 10px 5px 10px #01161E;
+    display: flex;
+    justify-content: center;
+    /* specific bulei*/
+    width: 500px;
+    height: 500px;
+    border: 10px transparent #034748;
+    background: #187AF0;
+    color: #01161E;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.container-title {
+    font-size: 56px;
+    color: white;
+    text-shadow: 4px 4px 4px #01161E;
+}
+
+.container-bubble:hover {
+    width: 550px;
+    height: 550px;
+}
+
+.form{
+    margin-left: 12%;
+    margin-top: -3%;
+}
+.form-title {
+    margin-top: 5%;
+    margin-left: 25%;
+    font-size: 3em;
+    color: #FFFFFF;
+}
+
+.login-input {
+    width: 80%;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 4%;
+
+}
+
+.login-input::placeholder {
+    color: white;
+    font-size: 18px;
+}
+
+.login-label {
+    align-items: center;
+    display: flex;
+    width: 75%;
+}
+
+.login-label span {
+    padding-left: 20px;
+}
+
+.login-button {
+    width: 37%;
+    color: #ffffff;
+    padding: 1%;
+    background-color: #01161E;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0em;
+    margin-top: 4%;
+    margin-left: 25%;
+}
+
+.login-button:hover {
+    color: #50ADC7;
+    background-color: #01161E;
+}
+
+/* Style for responsive */
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 95%;
+        display: block;
+    }
+
+    .container-title {
+        order: -1;
+        margin-right: 8%;
+    }
+
+    .container-bubble {
+        width: 100%;
+        height: 70%;
+        margin-left: -7%;
+    }
+
+    .container-bubble:hover {
+        width: 110%;
+        height: 75%;
+    }
+
+    .form-title {
+        font-size: 1.5em;
+    }
+
+    .login-button {
+        font-size: 18px;
+    }
+
+}
