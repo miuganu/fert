@@ -1,0 +1,85 @@
+.fert-button {
+    color: #ffffff;
+    background-color: #187AF0;
+    cursor: pointer;
+    width: 19%;
+    font-size: 15px;
+}
+
+.fert-button:hover {
+    color: #E5FCB6;
+    background-color: #01161E;
+}
+.fert-header-right {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.fert-header-button__relative {
+    position: relative;
+}
+
+.fert-button--left {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-right: 0 !important;
+}
+
+.fert-button--right {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-left: 2px solid #034748;
+    
+}
+
+.fert-button-options{
+    display: flex;
+    padding: 3%;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+
+.fert-button-choises{
+    width: 30%;
+    color: white;
+    background-color: #01161E;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fert-button-choises:hover {
+    color: #50ADC7;
+    background-color: #01161E;
+}
+
+@media only screen and (max-width: 600px) {
+.fert-button{
+    width: 42%;
+}
+.feedback-button{
+    margin-top: 13%;
+}
+.fert-button-choises{
+    padding: 3%;
+    margin-top: 10%;
+    margin-bottom: 4%;    
+    display: table-row;
+    width: 72%;
+    font-size: 15px;
+}
+.fert-button-options{
+    display: table-row;
+}
+.container{
+    margin-top: 7%;
+
+}
+
+}
