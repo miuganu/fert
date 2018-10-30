@@ -1,0 +1,43 @@
+.code-form{
+    display: flex;
+    flex-direction: column;
+}
+.code-text{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 3%;
+}
+.code-input {
+    width: 33%;
+    align-self: center;
+    text-align: center;
+    margin-top: 4%;
+    padding: 0%;
+}
+.submit-button{
+    width: 20%;
+    color: #ffffff;
+    padding: 1%;
+    background-color: #034748;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 3%;
+    align-self: center;
+}
+
+.submit-button:hover {
+    color: #50ADC7;
+    background-color: #01161E;
+}
+
+@media only screen and (max-width: 800px) {
+.submit-button{
+    margin-top: 13%;
+    width: 36%;
+}
+.code-input{
+    width: 57%;
+    margin-top: 10%;
+}
+}
