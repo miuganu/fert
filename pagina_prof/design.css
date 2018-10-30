@@ -1,0 +1,96 @@
+* {box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+
+body { 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+  }
+  
+/*Header*/
+  .header {
+    overflow: hidden;
+    background-color: rgba(73, 147, 196, 0.514);
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.text {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow:  4px 4px 0px rgba(0,0,0,0.2);
+  }
+  
+  .header a:hover {
+    background-color: rgba(227, 233, 236, 0.445);
+    color: rgb(63, 61, 192);
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+
+
+  /*meniu adaptibil si pentru mobile*/
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+  /*sidebar*/
+  #sidebar{
+      position: fixed;
+      width: 200px;
+      height:100%;
+      background: #151719;
+      left:-200px;
+      transition: all 500ms linear;
+      
+  }
+
+  #sidebar ul li{
+      color:rgba(230, 230, 230, 0.9);
+      list-style: none;
+      padding: 15px 10px;
+      border-bottom: 1px solid rgba(100,100,100,0.3);
+  }
+
+  #sidebar .toggle-button{
+      position: absolute;
+      left:230px;
+      top:20px;
+  }
+
+  #sidebar .toggle-button span{
+      display: block;
+      width: 30px;
+      height:5px;
+      background: #151719;
+      margin : 5px 0px;
+  }
+  #sidebar.active{
+      left:0px;
+  }
