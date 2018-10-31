@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Raport</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script src="js/scholarly.min.js"></script>
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+      <div class="banner">
+      	        <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
+
+        <div class="status">Community Draft</div>
+      </div>
+      <h1>Fert</h1>
+    </header>
+    <div role="contentinfo">
+      <dl>
+        <dt>Authors</dt>
+        <dd>
+          <a href="https://github.com/miuganu/">Iuganu Teodora-Madalina</a> &
+          <a href="https://github.com/dulandragos">Dulan Dragos Andrei</a>
+          <h>Anul 3, Grupa A6</h>
+        </dd>
+      </dl>
+    </div>
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+      <h2>Abstract</h2>
+      <p>
+        Fert este o aplicatie open source (<a href="https://github.com/miuganu/Fert">https://github.com/miuganu/Fert
+        </a>) ce se doreste a fi un site de feedback pentru studenti. Aceasta aplicatie a fost conceputa
+        in scop pur didactic reprezentand un proiect in cadrul materiei Dezvoltarea aplicatiilor Web la nivel de client. 
+      </p>
+    </section>
+    <section id="introduction" role="doc-introduction">
+      <!-- review? -->
+
+      <!-- Să se conceapă un instrument Web care permite publicului (i.e. studenţilor prezenţi) să ofere în timp real feedback 
+      anonim vorbitorului (e.g., profesorului) pe parcursul desfăşurării unei prelegeri (de exemplu, predarea unui curs 
+      sau susţinerea unei prezentări în cadrul unui eveniment de profil). Minimal, sistemul va permite feedback simplu cu 
+      două opţiuni – "Am înţeles"/"Nu am înţeles" – pentru ca oratorul să poată relua anumite porţiuni ale prelegerii, în 
+      situaţia în care un procent P (ajustabil) din audienţă a furnizat feedback de tip "Nu am înţeles". Aplicaţia va oferi
+       suport pentru plasarea de întrebări vorbitorului, cu sau fără autentificarea autorului întrebării. Întrebările puse 
+       trebuie să fie votate de încă M membri prezenţi pentru a fi afişate oratorului. De asemenea, prezentatorul va putea 
+       adresa publicului o întrebare cu răspuns de tip grilă pentru a se asigura că o anumită explicaţie a fost înţeleasă. 
+       Instrumentul dezvoltat trebuie să fie suficient de modular pentru
+       a include viitoare maniere de feedback. De asemenea, se va oferi suport pentru configurarea acestuia. Inspiraţie: -->
+
+
+      <h2>Introducere</h2>
+      <p>
+        Fert este o aplicatie web pentru colectarea de feedback din partea studentilor in timp real cadrul unui curs, astfel
+        o accesare a aplicatiei propriu-zisenecesita legare utilizatorului. Implicit in cadrul aplicatiei un utilizator(logat) ca 
+        si student va avea posibilitatea de a pune intrebari, a raspunde la intreabrile profesorului si pentru a oferi constat
+        feedback daca a inteles sau nu. De asemenea, daca un utilizator este logat ca si profesor poate crea o noua ora unde va 
+        putea vedea feedback-ul si de a pune intrebari.
+      </p>
+
+    </section>
+    <section id="structure">
+      <!-- review? -->
+      <h2>Structura</h2>
+      <p>
+        Pagina de pornire<br>
+•	Va contine un formular de login unde sunt prezente 2 campuri si anume username si parola, o nepotrivire a acestora va genera diverse mesaje de eroare.
+De asemeni va exista un buton de Login care permite accesul catre pagina specifica fiecarui utilizator.
+<br>
+
+Pagina principala va contine<br>
+•	Header-ul care contine numele aplicatiei(un simplu click va redirectiona utilizatorul catre pagina principala), un sidebar care va facilita interschiparea intreabrile
+paginile specifice utilizatorilor, spre exemplu pesntru elev vor fi paginile Raspunde, Votare si intreaba. Pe langa acestea se afla si butonul de logout.<br>
+<br>
+In cazul unui student, paginile la care va avea acces sunt:
+<br>
+Pagina Code<br>
+•	Pagina unde studentul va introduce codul spus de profesor pentru a-si face prezenta si pentru a intra la cursul respectiv. <br>
+•	Este necesara completarea tuturor campurilor pentru a adauga o licitatie si anume: numele produsului,
+pretul initial, categoria din care face parte, o imagine in diferite formate, o data de expirare care nu depaseste o luna de zile, si o descriere a produsului.<br>
+• Aceasta pagina este prevazuta si cu un buton care permite salvarea licitatiei adaugate.<br>
+<br>
+Pagina Home<br>
+• Reprezinta pagina cu toate optiunile dispobile si redirectarile catre restul paginilor.<br>
+• De asemenea, este pagina unde studentul poate alege daca a inteles sau nu a inteles topicul prezent.<br>
+<br>
+Pagina Raspunde<br>
+• Reprezinta pagina cu intrebarile grila puse de profesor.<br>
+• Studentul va putea alege, daca vrea, un raspuns si cu ajutorul butonului submit va trimite alegerea profesorului.<br>
+<br>
+Pagina de intreaba<br>
+• Aceasta pagina serveste drept scop neclaritatilor studentului asupra prelegerii. Acesta va putea pune si intrebari anonime.<br>
+<br>
+Pagina de Voteaza<br>
+• Pune la dispozitie intrebarile celorlalti studenti pentru a fi votate, astfel avand un numar M de voturi, fiind afisate si profesorului.<br>
+<br>
+In cazul unui profesor, paginile la care va avea acces sunt:
+<br>
+• PEntru a vedea grupele, topicuri si pentru a pune intrebari.
+
+      </p>
+      <section id="Root">
+        <!-- review? -->
+        <h3>Utilizatorul înregistrat</h3>
+  Se logheaza pe aplicatie folosind un username si o parola. Dupa ce s-a logat are urmatoarele drepturi: <br>
+(elev/student)<br>
+-	adauga o intrebare;<br>
+-	voteaza intrebari;<br>
+-	poate oferi feedback in timp real; <br>
+(profesor)<br>
+-adauga intrebare tip grila;<br>
+-poate vedea feedback-ul minimal; <br>
+</section>
+
+<section id="article">
+        <!-- review? -->
+        <h3>Utilizator fara cont</h3>
+
+Utilizatorul fara cont nu va putea accesa aplicatia.
+</section>
+
+<section id="hunk">
+        <!-- review? -->
+        <h3>Etapele dezvoltării proiectului</h3>
+
+1.  Alegerea proiectului <br>
+2.  Schite pentru realizarea designului<br>
+3.  Crearea paginilor pentru front-end(html-uri & css-uri)<br>
+4.  Arhitectura(realizarea diagramelor UML, UseCase, schema bazei de date)<br>
+5.  Realizarea tabelelor in baza de date<br>
+6.  Implementarea intr-un limbaj ales a functionalitatilor proiectului<br>
+7.  Implementarea view-urilor pentru fiecare pagina<br>
+8.  Testarea aplicatiei<br>
+9. Deployment<br>
+	</section>
+      <section id="inline">
+          <!-- review? -->
+          <h4>Tehnologii utilizate</h4>
+
+Proiectul utilizeaza urmatoarele tehnologii:
+HTML5 - este un limbaj pentru structurarea si prezentarea continutului pentru World Wide Web, o tehnologie nucleu pentru Internet propusa initial pentru 
+software-ul Opera.<br>
+<br>
+CSS - (Cascading Style Sheets) este un standard pentru formatarea elementelor unui document HTML. Stilurile se pot atasa elementelor HTML prin intermediul 
+unor fisiere externe sau în cadrul documentului, prin elementul "style" si/sau atributul style. CSS se poate utiliza si pentru formatarea elementelor XHTML,
+ XML si SVGL<br>
+ <br>
+Javascript - este un limbaj de programare orientat obiect bazat pe conceptul prototipurilor.Este folosit mai ales pentru introducerea unor functionalitati în 
+paginile web, codul Javascript din aceste pagini fiind rulat de catre browser. Limbajul este binecunoscut pentru folosirea sa in construirea siturilor web, 
+dar este folosit si pentru acesul la obiecte incastrate (embedded objects) în alte aplicații. A fost dezvoltat initial de către Brendan Eich de la Netscape
+ Communications Corporation sub numele de Mocha, apoi LiveScript, și denumit în final JavaScript.<br>
+
+      <section id="interactive">
+        <!-- review? -->
+        <h3>Servicii</h3>
+
+1. Github<br>
+
+•	GitHub este un serviciu de gazduire web pentru proiecte de dezvoltare a software-ului care utilizeaza sistemul de control al versiunilor Git. GitHub 
+ofera planuri tarifare pentru depozite private si conturi gratuite pentru proiecte open source.<br>
+        <br>
+        <br>
+</section>
+</section>
+  </body>
+</html>
