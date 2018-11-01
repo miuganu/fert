@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <title>FERT</title>
+        <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/feedback-30-415021.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="acasa.css">
+        <link rel="stylesheet"  href="common_prof.css" >
+        <script type="text/javascript" src="functii.js"></script>
+        
+</head>
+
+<body>
+    <header>
+    <!--Meniul de navigare-->
+    <div class="header">
+            <a href="./prof_home.html" class="text">Easy feedback in real-time</a>
+            <div class="header-right">
+              <a href="#contact">Contact</a>
+              <a href="#about">About us</a>
+              <a href="../login.html" class="active" >Logout</a>
+            </div>
+    </div>
+    </header>
+
+    <div id="sidebar">
+        <div class="toggle-button" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="#">Grupe</a></li>
+            <li><a href="#">Topicuri</a></li>
+            <li><a href="./prof_intrebari_catre_studenti.html">Intrebari</a></li>
+        </ul>
+    </div>
+    <h1 class="container-title"><strong>Meniu principal</strong></h1>
+    <main class="container">
+        
+        <h2 class="container-title"><em>Materie curenta</em></h2>
+        <div class="butoane_submit">
+        <div class="dropdown">
+            <button class="dropbtn">Grupe</button>
+            <div class="dropdown-content">
+              <a href="#">Grupa A6</a>
+              <a href="#">Grupa A3</a>
+              <a href="#">Grupa B1</a>
+              <a href="#">Grupa B5</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Topicuri</button>
+            <div class="dropdown-content">
+              <a href="#">Retele</a>
+              <a href="#">Baze de date</a>
+              <a href="#">Logica</a>
+            </div>
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn"onclick="location.href='./prof_intrebari_catre_studenti.html'">Intrebari st</button>
+            
+        </div>  
+        </div>
+     </main>
+
+
+</body>
+
+
+</html>

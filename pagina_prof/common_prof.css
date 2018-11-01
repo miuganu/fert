@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { 
+    
+    background-color: rgb(213, 219, 228);
+  }
+
+  input,
+  textarea {
+      border-radius: 10px;
+      height: 40px;
+      background-color: rgb(236, 232, 232);
+      border: none;
+      padding-left: 25px;
+  }
+/*face outline la placeholder*/
+input:focus {
+    outline: none;
+}
+
+button, a {
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*header*/
+.header {
+    overflow: hidden;
+    background-color: rgb(113, 158, 173);
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.text {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow:  3px 3px 0px rgba(0,0,0,0.2);
+  }
+  
+  .header a:hover {
+    background-color: rgba(227, 233, 236, 0.445);
+    color: rgb(63, 61, 192);
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+
+
+/*Cutiuta*/
+.container{
+    background-color: rgba(250, 250, 250, 0.808);
+    width: 80%;
+    padding: 13px;
+    box-shadow:  0 11px 16px -6px black;
+    border: 1px solid rgb(49, 88, 104);
+    margin-left: 10%;
+    border-radius: 4px;
+    margin-top: 9%;
+}
+.container-title{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+/*meniu adaptibil si pentru mobile*/
+@media only screen and (max-width: 600px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .header-right {
+      float: none;
+    }
+    .container{
+        margin-top: 13%;
+    }
+   
+  }

@@ -1,0 +1,87 @@
+.butoane_submit{
+    display: flex;
+    padding: 4%;
+    justify-content: space-around;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    
+}
+
+.dropbtn {
+    width: 130%;
+    color: #ffffff;
+    padding: 1%;
+    background-color: #467172;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15%;
+    align-self: left;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/*fara aceasta functie imi sunt blocate dropdownurile*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+  /*sidebar*/
+  #sidebar{
+    position: absolute;/*sta locului*/
+    width: 200px;
+    height:100%;
+    background: #151719;
+    left:-200px;
+    transition: all 700ms linear;
+    
+}
+
+#sidebar ul li{
+    color:rgba(230, 230, 230, 0.9);
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+
+#sidebar .toggle-button{
+    position: absolute;
+    left:230px;
+    top:20px;
+}
+
+#sidebar .toggle-button span{
+    display: block;
+    width: 30px;
+    height:5px;
+    background: #151719;
+    margin : 5px 0px;
+}
+#sidebar.active{
+    left:0px;
+}

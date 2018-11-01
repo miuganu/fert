@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <title>FERT</title>
+        <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/feedback-30-415021.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="acasa.css">
+        <link rel="stylesheet"  href="common_prof.css" >
+        <link rel="stylesheet" href="cod_clasa.css">
+        <script type="text/javascript" src="functii.js"></script>
+        
+</head>
+
+<body>
+    <header>
+    <!--Meniul de navigare-->
+    <div class="header">
+            <a href="./prof_home.html" class="text">Easy feedback in real-time</a>
+            <div class="header-right">
+              <a href="#contact">Contact</a>
+              <a href="#about">About us</a>
+              <a href="../login.html" class="active" >Logout</a>
+            </div>
+    </div>
+    </header>
+    <div id="sidebar">
+            <div class="toggle-button" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li><a href="#">Grupe</a></li>
+                <li><a href="#">Topicuri</a></li>
+                <li><a href="#">Intrebari st.</a></li>
+            </ul>
+        </div>
+    <main class="container">
+        <div class="butoane">
+            <form class="code-form">
+                <h1 class="container-title"><strong>Adaugati intrebare:</strong></h1>
+                <br>
+                <input type="text" placeholder="Intrebarea adresata studentilor" id="ad_intrebare_placeholde">
+                <input type="text" placeholder="Prima varianta de raspuns" class="code-input">
+                <input type="text" placeholder="A doua varianta de raspuns" class="code-input">
+                <input type="text" placeholder="A treia varianta de raspuns" class="code-input">
+                <div class="butoane_submit">
+                    <button type="button" class="submit-button" onclick="adaugare_intrebare()">Submit</button>
+                    
+                   
+                </div>
+            </form>
+        </div>
+     </main>
+</body>
+
+
+</html>
