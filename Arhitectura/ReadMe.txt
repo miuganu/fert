@@ -1,0 +1,1 @@
+This foldr will contain our application's arhitecture.
