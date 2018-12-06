@@ -1,0 +1,12 @@
+Paradigma REST presupune separarea serverului de client la nivel de implementare; clientul nu stie de server si viceversa; 
+aceste doua entitati stiu doar formatul de mesaj pe care trebuie sa-l trimita/receptioneze. Aceasta modularizare ajuta la modificarea eficienta a codului
+(doar client-side sau server-side, nu e nevoie sa modificam si cealalta entitate) si gestionarea facila a aplicatiei web.
+
+In contextul aplicatiei noastre, utilizatorul este interesat sa urmareasca doar partea de feedback/intrebari si cum le poate accesa, 
+iar la nivel de server se pune accent pe modul in care sunt primite cererile utilizatorului, cum sunt interpretate pentru a raspunde 
+cererilor si cum este returnat “produsul final” catre utilizator.
+METHOD                URL                         ACTION
+GET            home.net/user/{id}              returneaza toate instantele de utilizatori care au id-ul "id"
+DELETE         home.net/user/courses/{id}      returneaza un JSON ce confirma stergerea cursului cu id-ul "id" applicationj/json
+PUT            home.net/login/succeded/{name}  returneaca JSON ce confirma logarea utilizatorului cu respectivele creditentiale si cu numele "name"
+GET            home.net/user/questions         returneaza o lista cu toate intrebarile
