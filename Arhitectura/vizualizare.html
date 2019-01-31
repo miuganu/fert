@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FERT</title>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/feedback-30-415021.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stil_comun.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+        <script type="text/javascript" src="test.js"></script>
+        <script src="vizualizare.js"></script>
+</head>
+    <body>
+        <header class="fert-header">
+            <h1 class="fert-title">Fert</h1>
+            <div class="fert-header--right">
+                
+                <button type="button" class="fert-header-button--logout">LogOut</button>
+            </div>            
+        </header>
+
+        <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="pagina_principala.html">Acasă</a>
+                  <a href="pagina_intrebare.html">Adăugare întrebări</a>
+                  <a href="afisareintrebare.html">Afișare întrebare public</a>
+                  <a href="vizualizare.html">Vizualizare topic înteles</a>
+                  <a href="pagina_contact.html">Contact</a>       
+                </div>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;  Meniu </span>
+
+
+        <main class="container">
+            <script>
+                setTimeout(function(){
+                window.location.reload(1);
+                }, 50000);  
+                </script>
+          <p>Feedback intrebari</p></br>
+          <div >
+              <ol id="feedback">
+              </ol> 
+             
+          </div>
+                
+           
+        
+        </main>
+
+    </body>
+</html>
+
+<!--
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>FERT</title>
+        <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/feedback-30-415021.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stil_comun.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+        <script type="text/javascript" src="test.js"></script>
+        <script src="vizualizare.js"></script>
+    </head>  
+  
+
+  <body>
+      <script>
+          setTimeout(function(){
+          window.location.reload(1);
+          }, 50000);  
+          </script>
+    <p>Feedback intrebari</p></br>
+    <div>
+        <ol id="feedback">
+        </ol> 
+       
+    </div>
+
+  </body>
+</html>
+-->
