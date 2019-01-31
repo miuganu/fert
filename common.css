@@ -12,6 +12,8 @@ textarea {
     background-color: #C4C4C4;
     border: none;
     padding-left: 25px;
+    margin-left: 4%;
+    margin-top: 5%;
 }
 
 input:focus {

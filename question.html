@@ -15,6 +15,15 @@
 
     <!--menu icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+    
 </head>
 
 <body>
@@ -22,15 +31,15 @@
         <div class="dropdown">
             <button class="dropbtn"><i class="fa fa-bars"></i></button>
             <div class="dropdown-content">
-                <a href="file://E:/CLIW/answer.html">Raspunde</a>
-                <a href="file://E:/CLIW/vote.html">Voteaza</a>
-                <a href="file://E:/CLIW/question.html">Intreaba</a>
-                <a href="#">LogOut</a>
+                <a href="./answer.html">Raspunde</a>
+                <a href="./vote.html">Voteaza</a>
+                <a href="./question.html">Intreaba</a>
+                <a href="./login.html">LogOut</a>
                 <p class="credits">® Iuganu Teodora-Madalina & Dulan Andrei Dragos</p>
 
             </div>
         </div>
-        <a type="button" class="fert-title" href="file://E:/CLIW/home.html">Fert</a>
+        <a type="button" class="fert-title" href="./home.html">Fert</a>
 
 
     </header>
@@ -50,17 +59,36 @@
             </ul>
         </div>
         <div class="question-form">
-            <form class="question-form">
-                <input type="text" placeholder="Type your question here" class="question-input">
+            <form class="question-form" id="ask-form">
+                <input type="text" placeholder="Type your question here" class="question-input" id="askQuestion">
                     <label class="box"> Anonim
-                        <input type="checkbox">
+                        <input type="checkbox" id="anon">
                         <span class="checkmark"></span>
                     </label>
-                <button type="button" class="question-button">Ask</button>
+                <button type="submit" class="question-button">Ask</button>
             </form>
         </div>
 
     </main>
+    <script>
+        // Initialize Firebase
+        // Initialize Firebase
+ var config = {
+    apiKey: "AIzaSyDyrHAHabaKZD1ftOqU681cW1EXmGtd6Vk",
+    authDomain: "fertdda.firebaseapp.com",
+    databaseURL: "https://fertdda.firebaseio.com",
+    projectId: "fertdda",
+    storageBucket: "fertdda.appspot.com",
+    messagingSenderId: "76462374610"
+  };
+  firebase.initializeApp(config);
+         // references
+         const database = firebase.database(); 
+         const auth = firebase.auth();
+        
+         //database.settings({ timstampsInSnapshots: true});
+        </script>
+    <script src="intreaba.js"></script>
 </body>
 
 </html>

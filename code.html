@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Answer question</title>
+    <title>Choose</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
@@ -15,6 +15,17 @@
 
     <!--menu icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+    
+    <script src="app.js"></script>
+
 </head>
 
 <body>
@@ -24,9 +35,12 @@
     <main class="container">
         <div>
             <form class="code-form">
+                <input type="button" class="redirect-button" value="Creeaza o prezentare" onclick="location.href='./pagina_principala.html'" />
+                <!--
                 <p class="code-text">Scrie codul orei:</p>
                 <input type="text" placeholder="codul clasei" class="code-input">
-                <input type="button" class="submit-button" value="Submit" onclick="location.href='file://E:/CLIW/home.html'" />
+                -->
+                <input type="button" class="submit-button" value="Mergi la clasa" onclick="location.href='./home.html'" />
             </form>
         </div>
 

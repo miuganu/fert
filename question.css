@@ -31,10 +31,10 @@
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
+    margin-left: 19%;
+    margin-top: 1%;
     cursor: pointer;
-    font-size: 19px;
-    margin-left: 18%;
-    margin-top: 2%;
+    font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -69,7 +69,6 @@
 .box input:checked ~ .checkmark {
     background-color: #034748;
 }
-<<<<<<< HEAD
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
@@ -83,21 +82,6 @@
     display: block;
 }
 
-=======
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the checkmark when checked */
-.box input:checked ~ .checkmark:after {
-    display: block;
-}
-
->>>>>>> b5a80ce638d6c4c36614dbc04d448fe612ea4016
 /* Style the checkmark/indicator */
 .box .checkmark:after {
     left: 9px;

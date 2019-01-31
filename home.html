@@ -14,28 +14,48 @@
 
     <!--menu icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+<script>
+  // Initialize Firebase
+ var config = {
+    apiKey: "AIzaSyDyrHAHabaKZD1ftOqU681cW1EXmGtd6Vk",
+    authDomain: "fertdda.firebaseapp.com",
+    databaseURL: "https://fertdda.firebaseio.com",
+    projectId: "fertdda",
+    storageBucket: "fertdda.appspot.com",
+    messagingSenderId: "76462374610"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="feedback.js"></script>
 </head>
 <body>
 <header class="fert-header">
     <h1 class="fert-title">Fert</h1>
     <div class="fert-header--right">
-        <button type="button" class="fert-header-button--logout">LogOut</button>
+        <button type="button" class="fert-header-button--logout" id="logoutbtn">LogOut</button>
     </div>
                 
 </header>
 <main class="container">
 
     <h1 class="container-title">Current topic</h1>
-    <div class="button feedback-button">
-        <button class="fert-button fert-button--left">Am inteles</button>
-        <button type="button" class="fert-button fert-button--right">Nu am inteles</button>
+    <div class="button feedback-button" id="fedback-stuff">
+        <button type="button"class="fert-button fert-button--left" id="understood">Am inteles</button>
+        <button type="button" class="fert-button fert-button--right" id="notunderstood">Nu am inteles</button>
     </div>
 
     <div class="button fert-button-options">
         <!-- <a type="button" class="fert-button-choises" href="file://E:/CLIW/vote.html">Votare intrebari</a> -->
-        <button type="button" class="fert-button-choises" onclick="location.href='file://E:/CLIW/vote.html'">Voteaza intrebari</button>
-        <button type="button" class="fert-button-choises" onclick="location.href='file://E:/CLIW/question.html'">Intreaba</button>
-        <button type="button" class="fert-button-choises" onclick="location.href='file://E:/CLIW/answer.html'">Raspunde</button>
+        <button type="button" class="fert-button-choises" onclick="location.href='./vote.html'">Voteaza intrebari</button>
+        <button type="button" class="fert-button-choises" onclick="location.href='./question.html'">Intreaba</button>
+        <button type="button" class="fert-button-choises" onclick="location.href='./answer.html'">Raspunde</button>
     </div>
 
 </main>

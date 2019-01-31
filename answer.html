@@ -15,6 +15,16 @@
 
     <!--menu icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+    
+ 
+
 </head>
 
 <body>
@@ -22,45 +32,61 @@
         <div class="dropdown">
             <button class="dropbtn"><i class="fa fa-bars"></i></button>
             <div class="dropdown-content">
-                <a href="file://E:/CLIW/answer.html">Raspunde</a>
-                <a href="file://E:/CLIW/vote.html">Voteaza</a>
-                <a href="file://E:/CLIW/question.html">Intreaba</a>
-                <a href="#">LogOut</a>
+                <a href="./answer.html">Raspunde</a>
+                <a href="./vote.html">Voteaza</a>
+                <a href="./question.html">Intreaba</a>
+                <a href="./login.html">LogOut</a>
                 <p class="credits">® Iuganu Teodora-Madalina & Dulan Andrei Dragos</p>
 
             </div>
         </div>
-        <a type="button" class="fert-title" href="file://E:/CLIW/home.html">Fert</a>
+        <a type="button" class="fert-title" href="./home.html">Fert</a>
     </header>
     <main class="container">
 
         <h1 class="container-title">Current topic</h1>
 
         <div class="answer">
-            <p class="question">
-                This is a question ?
-            </p>
-            <label class="box">One
+                    <p>Intrebari prezentare</p>
+                    <div>
+                        <ol id="osinguraintrebare">
+                        </ol> 
+                        <!--
+                            <button id="raspunsales" type="submit" onclick="raspintrebare()" class="submit-button">Raspuns</button>     
+                         -->
+                    </div>
+                    
+                    <script>
+                            setTimeout(function(){
+                            window.location.reload(1);
+                            }, 5000);  
+                    </script>
+                    
+                
+            <!--
+            <label class="box" id="first">One
                 <input type="checkbox">
                 <span class="checkmark"></span>
             </label>
-            <label class="box">Two
+            <label class="box" id="second">Two
                 <input type="checkbox">
                 <span class="checkmark"></span>
             </label>
-            <label class="box">Three
+            <label class="box" id="third">Three
                 <input type="checkbox">
                 <span class="checkmark"></span>
             </label>
-            <label class="box">Four
+            <label class="box" id="fourth">Four
                 <input type="checkbox">
                 <span class="checkmark"></span>
-            </label>
-            <input type="button" class="submit-button" value="Submit" onclick="window.location.href='http://www.home.com/'" />
-
+            </label> 
+            -->
+            <!--<input type="button" class="submit-button" value="Submit" onclick="window.location.href='http://www.home.com/'" />
+-->
         </div>
 
     </main>
+    <script src="adaugarepublic.js"></script>
 </body>
 
 </html>

@@ -11,18 +11,29 @@
     <!-- style -->
     <link href="common.css" rel="stylesheet">
     <link href="login.css" rel="stylesheet">
+
 </head>
 <body>
 <main class="container">
+    <div class="container-bubble container-bubble--small">
+        <form class="small-form" id="form-small">
+            <h1 class="small-form-title">Sign up</h1>
+            <input type="text" placeholder="username" class="sign-up-input" id="Email">
+            <input type="password" placeholder="password" class="sign-up-input" id="Password">
+            <input type="submit" id="btnSignUp" class="login-button" value="Sign Up" />
+            <!--<a class="login-button"><button type="button" class="login-button">Sign Up</button></a> -->
+        </form>
+    </div>
     <div class="container-bubble">
-        <form class="form">
+        <form class="form" id="form-fire">
             <h1 class="form-title">Sign In</h1>
-            <input type="text" placeholder="username" class="login-input">
-            <input type="password" placeholder="password" class="login-input">
+            <input type="text" placeholder="username" id="txtEmail" class="login-input">
+            <input type="password" placeholder="password" id="txtPassword" class="login-input">
             <!--
             <a class="login-button" href="home.html"><button type="button" class="login-button">Log In</button></a>
-            -->
-            <input type="button" class="login-button" value="Log In" onclick="location.href='file://E:/CLIW/code.html'" />
+                                    -->
+
+            <input type="submit" id="btnLogIn" class="login-button" value="Log In"  />
         </form>
     </div>
 
@@ -31,5 +42,33 @@
     <h1 class="container-title">Fert</h1>
 
 </main>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+<script>
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyDyrHAHabaKZD1ftOqU681cW1EXmGtd6Vk",
+    authDomain: "fertdda.firebaseapp.com",
+    databaseURL: "https://fertdda.firebaseio.com",
+    projectId: "fertdda",
+    storageBucket: "fertdda.appspot.com",
+    messagingSenderId: "76462374610"
+  };
+  firebase.initializeApp(config);
+
+ // references
+ const database = firebase.database(); 
+ const auth = firebase.auth();
+
+ //database.settings({ timstampsInSnapshots: true});
+</script>
+
+<script src="app.js"></script>
+
 </body>
 </html>

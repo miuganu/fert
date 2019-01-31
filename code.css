@@ -23,9 +23,25 @@
     font-weight: bold;
     cursor: pointer;
     margin-top: 3%;
+    margin-bottom: 8%;
     align-self: center;
 }
-
+.redirect-button{
+    width: 30%;
+    color: #ffffff;
+    padding: 1%;
+    background-color: #034748;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8%;
+    margin-bottom: 13%;
+    align-self: center;
+}
+.redirect-button:hover {
+    color: #50ADC7;
+    background-color: #01161E;
+}
 .submit-button:hover {
     color: #50ADC7;
     background-color: #01161E;

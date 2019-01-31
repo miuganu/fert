@@ -23,6 +23,8 @@ body {
     box-shadow: 10px 5px 10px #01161E;
     display: flex;
     justify-content: center;
+    margin-left: 3%;
+
     /* specific bulei*/
     width: 500px;
     height: 500px;
@@ -33,18 +35,37 @@ body {
     justify-content: space-around;
 
 }
-
+.container-bubble--small{
+    border-radius: 50%;
+    box-shadow: 10px 5px 10px #01161E;
+    display: flex;
+    justify-content: center;
+    margin-right: 2%;
+    /* specific bulei*/
+    width: 400px;
+    height: 400px;
+    border: 7px transparent #034748;
+    background: #187AF0;
+    color: #01161E;
+    align-items: center;
+    justify-content: space-around;   
+}
 .container-title {
     font-size: 56px;
     color: white;
     text-shadow: 4px 4px 4px #01161E;
+    margin-left: 4%;
+
 }
 
 .container-bubble:hover {
     width: 550px;
     height: 550px;
 }
-
+.container-bubble--small:hover {
+    width: 450px;
+    height: 450px;
+}
 .form{
     margin-left: 12%;
     margin-top: -3%;
@@ -57,6 +78,14 @@ body {
     color: #FFFFFF;
     text-shadow: 1px 1px 2px black;
 }
+.small-form-title {
+    margin-top: 10%;
+    margin-bottom: 3%;
+    margin-left: 25%;
+    font-size: 2em;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px black;
+}
 
 .login-input {
     width: 80%;
@@ -65,7 +94,28 @@ body {
     margin-top: 4%;
 
 }
+.signup-input {
+    width: 60%;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-top: 4%;
+    margin-left: 15%;
 
+}
+.signup-input::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+.signup-label {
+    align-items: center;
+    display: flex;
+    width: 60%;
+}
+
+.signup-label span {
+    padding-left: 20px;
+}
 .login-input::placeholder {
     color: white;
     font-size: 18px;
@@ -121,7 +171,16 @@ body {
         width: 110%;
         height: 75%;
     }
+    .container-bubble-small {
+        width: 80%;
+        height: 50%;
+        margin-left: -7%;
+    }
 
+    .container-bubble:hover {
+        width: 90%;
+        height: 60%;
+    }
     .form-title {
         font-size: 1.5em;
     }
